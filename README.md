@@ -1,6 +1,6 @@
 # npmtest-react-flexbox-grid
 
-#### basic test coverage for  [react-flexbox-grid (v1.0.2)](https://github.com/roylee0704/react-flexbox-grid)  [![npm package](https://img.shields.io/npm/v/npmtest-react-flexbox-grid.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-flexbox-grid) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-flexbox-grid.svg)](https://travis-ci.org/npmtest/node-npmtest-react-flexbox-grid)
+#### basic test coverage for  [react-flexbox-grid (v1.1.1)](https://github.com/roylee0704/react-flexbox-grid)  [![npm package](https://img.shields.io/npm/v/npmtest-react-flexbox-grid.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-react-flexbox-grid) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-react-flexbox-grid.svg)](https://travis-ci.org/npmtest/node-npmtest-react-flexbox-grid)
 
 #### A set of React components implementing flexboxgrid with the power of CSS Modules
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-flexbox-grid/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-flexbox-grid/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-react-flexbox-grid/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-react-flexbox-grid/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-react-flexbox-grid/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-react-flexbox-grid/build/coverage.html/index.html)
 
@@ -35,44 +35,30 @@
 ```json
 
 {
-    "name": "react-flexbox-grid",
-    "description": "A set of React components implementing flexboxgrid with the power of CSS Modules",
-    "homepage": "https://github.com/roylee0704/react-flexbox-grid",
-    "version": "1.0.2",
-    "main": "lib/index.js",
     "author": {
         "name": "Roy Lee"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/roylee0704/react-flexbox-grid.git"
     },
     "bugs": {
         "url": "https://github.com/roylee0704/react-flexbox-grid/issues"
     },
-    "keywords": [
-        "css modules",
-        "flexbox",
-        "grid",
-        "react",
-        "react-component"
-    ],
     "dependencies": {
-        "flexboxgrid": "^6.3.0"
+        "flexboxgrid": "^6.3.0",
+        "prop-types": "^15.5.8"
     },
+    "description": "A set of React components implementing flexboxgrid with the power of CSS Modules",
     "devDependencies": {
         "@types/react": "*",
         "autoprefixer": "^6.0.3",
-        "babel-cli": "^6.4.0",
-        "babel-core": "^6.4.0",
-        "babel-eslint": "^5.0.0-beta6",
-        "babel-loader": "^6.2.1",
+        "babel-cli": "^6.4.1",
+        "babel-core": "^6.24.1",
+        "babel-eslint": "^7.2.1",
+        "babel-loader": "^6.4.1",
         "babel-plugin-react-transform": "^2.0.0",
-        "babel-polyfill": "^6.3.14",
-        "babel-preset-es2015-loose": "^6.1.4",
-        "babel-preset-react": "^6.3.13",
-        "babel-preset-react-hmre": "^1.0.1",
-        "babel-preset-stage-0": "^6.3.13",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-env": "^1.4.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-1": "^6.24.1",
         "cpx": "^1.2.1",
         "cross-env": "^1.0.4",
         "css-loader": "^0.21.0",
@@ -85,19 +71,17 @@
         "flexboxgrid": "^6.3.0",
         "isparta": "^4.0.0",
         "jsdom": "^7.0.2",
-        "karma": "^0.13.3",
-        "karma-chrome-launcher": "^0.2.0",
-        "karma-cli": "^0.1.0",
-        "karma-mocha": "^0.2.0",
-        "karma-phantomjs-launcher": "~0.2",
-        "karma-webpack": "^1.7.0",
-        "mocha": "^2.3.4",
+        "karma": "^1.6.0",
+        "karma-mocha": "^1.3.0",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "karma-webpack": "^2.0.3",
+        "mocha": "^3.1.2",
         "node-sass": "^3.4.2",
-        "phantomjs": "^1.9.19",
+        "phantomjs-prebuilt": "^2.1.14",
         "postcss-loader": "^0.7.0",
-        "react": "^15.2.0",
-        "react-addons-test-utils": "^15.2.0",
-        "react-dom": "^15.2.0",
+        "react": "^15.5.4",
+        "react-addons-test-utils": "^15.5.1",
+        "react-dom": "^15.5.4",
         "react-hot-loader": "^1.3.0",
         "redbox-react": "^1.1.1",
         "rimraf": "^2.4.4",
@@ -107,10 +91,40 @@
         "webpack-dev-middleware": "^1.4.0",
         "webpack-hot-middleware": "^2.4.1"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "09040dcd5f37be9356f25b8551df97527174aeae",
+        "tarball": "https://registry.npmjs.org/react-flexbox-grid/-/react-flexbox-grid-1.1.1.tgz"
+    },
+    "gitHead": "363f338fde1ccd4e74b67e7242dfd8b75386df38",
+    "homepage": "https://github.com/roylee0704/react-flexbox-grid",
+    "keywords": [
+        "css modules",
+        "flexbox",
+        "grid",
+        "react",
+        "react-component"
+    ],
+    "license": "MIT",
+    "main": "lib/index.js",
+    "maintainers": [
+        {
+            "name": "roylee0704"
+        }
+    ],
+    "name": "react-flexbox-grid",
+    "optionalDependencies": {},
+    "peerDependencies": {
+        "react": "^0.14.3 || ^15.5.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/roylee0704/react-flexbox-grid.git"
+    },
     "scripts": {
         "build": "cross-env NODE_ENV=production npm run compile",
         "clean": "rimraf ./lib",
-        "compile": "./node_modules/.bin/babel -d ./lib ./src",
+        "compile": "babel -d ./lib ./src",
         "lint": "eslint src test",
         "patch": "bumped release patch",
         "prebuild": "npm run clean",
@@ -120,11 +134,8 @@
         "test": "cross-env NODE_ENV=test karma start",
         "test:watch": "cross-env NODE_ENV=test karma start --no-single-run"
     },
-    "license": "MIT",
-    "peerDependencies": {
-        "react": "^0.14.3 || ^15.0.0"
-    },
     "types": "react-flexbox-grid.d.ts",
+    "version": "1.1.1",
     "bin": {}
 }
 ```
